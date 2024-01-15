@@ -54,6 +54,25 @@ struct ButtonAndStateBootcamp: View {
                     RoundedRectangle(cornerRadius: 20)
                         .fill(.brown)
                 )
+                
+                Button("Button 1") { }
+                    .buttonStyle(.bordered)
+                
+                Button("Button 2", role: .destructive) { }
+                    .buttonStyle(.bordered)
+                
+                Button("Button 3") { }
+                    .buttonStyle(.borderedProminent)
+                
+                Button("Button 4", role: .destructive) { }
+                    .buttonStyle(.borderedProminent)
+                    .tint(.cyan)
+                
+                Button("With image,", systemImage: "flag.checkered.circle.fill") {
+                    
+                }.buttonStyle(.bordered)
+                
+                
             }
         }
     }
